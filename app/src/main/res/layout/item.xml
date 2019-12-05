@@ -13,7 +13,7 @@
             android:id="@+id/imgNewsImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            app:srcCompat="@drawable/News-drinking-coffee" />
+            app:srcCompat="@drawable/news_drinking_coffee" />
 
         <TextView
             android:id="@+id/txtNewsTitle"
