@@ -11,7 +11,7 @@
     android:scrollbars="vertical">
 
     <TextView
-        android:id="@+id/txtConsultant"
+        android:id="@+id/txtBooking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/title_consultant"
@@ -86,7 +86,7 @@
         android:textSize="14sp" />
 
     <EditText
-        android:id="@+id/edtSign3"
+        android:id="@+id/edtDOB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
