@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,197 +7,196 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#00575757"
-        android:orientation="vertical">
+        android:layout_height="80dp"
+        android:background="@drawable/coral_bg"
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/txtBooking2"
+            android:layout_width="wrap_content"
             android:layout_height="80dp"
-            android:background="@drawable/coral_bg"
-            android:orientation="horizontal">
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="30dp"
+            android:paddingRight="20dp"
+            android:text="@string/title_profile"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/txtBooking2"
-                android:layout_width="wrap_content"
-                android:layout_height="80dp"
-                android:layout_marginBottom="20dp"
-                android:paddingLeft="25dp"
-                android:paddingTop="30dp"
-                android:paddingRight="20dp"
-                android:text="@string/title_profile"
-                android:textColor="#000000"
-                android:textSize="30sp"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="25dp"
-                app:srcCompat="@drawable/logo" />
-        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/avatar" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/textView11"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Parack Obama"
-                        android:textColor="#000000"
-                        android:textSize="18sp" />
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/avatar" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parack Obama"
+                                android:textColor="#000000"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Account information/ Settings" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:drawableRight="@drawable/arrowright16"
+                            android:text="TextView" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#C2C5CC" />
 
                     <TextView
-                        android:id="@+id/textView12"
+                        android:id="@+id/txtAnamnesis"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Account information/ Settings" />
+                        android:layout_gravity="center_vertical"
+                        android:drawableLeft="@drawable/medical_history"
+                        android:drawableRight="@drawable/arrowright16"
+                        android:drawablePadding="15dp"
+                        android:gravity="center_vertical"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Anamnesis"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/txtFamilyContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/contact"
+                        android:drawableRight="@drawable/arrowright16"
+                        android:drawablePadding="15dp"
+                        android:gravity="center_vertical"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Family Contact"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/txtDrugAllergy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/drug"
+                        android:drawableRight="@drawable/arrowright16"
+                        android:drawablePadding="15dp"
+                        android:gravity="center_vertical"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Drug Allergy "
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/txtCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/card"
+                        android:drawableRight="@drawable/arrowright16"
+                        android:drawablePadding="15dp"
+                        android:gravity="center_vertical"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Master/ Visa Card"
+                        android:textColor="#000000" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#C2C5CC" />
+
+                    <TextView
+                        android:id="@+id/txtSupportCenter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/support_center"
+                        android:drawableRight="@drawable/arrowright16"
+                        android:drawablePadding="15dp"
+                        android:gravity="center_vertical"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Support Center"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/txtAboutUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/connection"
+                        android:drawableRight="@drawable/arrowright16"
+                        android:drawablePadding="15dp"
+                        android:gravity="center_vertical"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="About us"
+                        android:textColor="#000000" />
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    android:drawableRight="@drawable/arrowright16"
-                    android:text="TextView" />
-            </LinearLayout>
+    </ScrollView>
 
-            <View
-                android:id="@+id/view3"
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginBottom="20dp"
-                android:background="#C2C5CC" />
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:drawableLeft="@drawable/medical_history"
-                android:drawableRight="@drawable/arrowright16"
-                android:drawablePadding="15dp"
-                android:gravity="center_vertical"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:text="Anamnesis"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/contact"
-                android:drawableRight="@drawable/arrowright16"
-                android:drawablePadding="15dp"
-                android:gravity="center_vertical"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:text="Family Contact"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/drug"
-                android:drawableRight="@drawable/arrowright16"
-                android:drawablePadding="15dp"
-                android:gravity="center_vertical"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:text="Drug Allergy "
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/card"
-                android:drawableRight="@drawable/arrowright16"
-                android:drawablePadding="15dp"
-                android:gravity="center_vertical"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:text="Master/ Visa Card"
-                android:textColor="#000000" />
-
-            <View
-                android:id="@+id/view2"
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginBottom="20dp"
-                android:background="#C2C5CC" />
-
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/support_center"
-                android:drawableRight="@drawable/arrowright16"
-                android:drawablePadding="15dp"
-                android:gravity="center_vertical"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:text="Support Center"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView19"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/connection"
-                android:drawableRight="@drawable/arrowright16"
-                android:drawablePadding="15dp"
-                android:gravity="center_vertical"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:text="About us"
-                android:textColor="#000000" />
-        </LinearLayout>
-
-
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>

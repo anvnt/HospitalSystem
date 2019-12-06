@@ -14,7 +14,7 @@
         android:layout_height="100dp"
         android:layout_marginRight="10dp"
         android:layout_weight="2"
-        app:srcCompat="@drawable/news_drinking_coffee" />
+        app:srcCompat="@drawable/medical_exam" />
 
     <LinearLayout
         android:layout_width="match_parent"
