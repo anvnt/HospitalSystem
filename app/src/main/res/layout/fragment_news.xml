@@ -39,6 +39,231 @@
             app:srcCompat="@drawable/logo" />
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgNewsImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/news_drinking_coffee" />
+
+                <TextView
+                    android:id="@+id/txtNewsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Another Benefit from Coffee: It Can Reduce Risk of Metabolic Syndrome "
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtNewsDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Experts say a type of nutrient known as polyphenols may be the ingredient in coffee... "
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="0.2"
+                        app:srcCompat="@drawable/healthline" />
+
+                    <TextView
+                        android:id="@+id/txtNewsSource"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:text="Healthline"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:text="." />
+
+                    <TextView
+                        android:id="@+id/txtNewsDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:drawablePadding="30dp"
+                        android:text="23 hours ago"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgNewsImage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/news_skincancer" />
+
+                <TextView
+                    android:id="@+id/txtNewsTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="New Treatment Shows Promise in Combating Skin Cancer: How It Works "
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtNewsDescription1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Researchers said a radiation treatment known as brachytherapy might be a better option... "
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView51"
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="0.2"
+                        app:srcCompat="@drawable/healthline" />
+
+                    <TextView
+                        android:id="@+id/txtNewsSource1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:text="Healthline"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView161"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:text="." />
+
+                    <TextView
+                        android:id="@+id/txtNewsDate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:drawablePadding="30dp"
+                        android:text="05/12/2019"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgNewsImage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/news_fada" />
+
+                <TextView
+                    android:id="@+id/txtNewsTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="New Hope for People with Sickle Cell Anemia as FDA Approves Drug "
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtNewsDescription2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="The new drug Oxbryta attacks the underlying causes of sickle cell anemia, not just... "
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView52"
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="0.2"
+                        app:srcCompat="@drawable/healthline" />
+
+                    <TextView
+                        android:id="@+id/txtNewsSource2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:text="Healthline"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView162"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:text="." />
+
+                    <TextView
+                        android:id="@+id/txtNewsDate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:drawablePadding="30dp"
+                        android:text="04/12/2019"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
     <ListView
         android:id="@+id/lvNews"
         android:layout_width="match_parent"
