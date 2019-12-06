@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.TimePicker;
 
 import androidx.annotation.NonNull;
@@ -23,7 +24,8 @@ public class BookingFragment extends Fragment {
     View view;
     Spinner spSex;
     ArrayAdapter <String>adapter;
-    EditText edtFullName, edtDOB, edtPhone, edtEmail, edtAddress,edtDate,edtTime ;
+    EditText edtFullName,  edtPhone, edtEmail, edtAddress ;
+    TextView edtDOB,edtDate,edtTime;
     Calendar calendarDate=Calendar.getInstance();
     SimpleDateFormat sdfDate = new SimpleDateFormat("dd/MM/yyyy");
     Calendar calendarTime=Calendar.getInstance();
@@ -72,7 +74,7 @@ public class BookingFragment extends Fragment {
                 callBack,
                 calendarTime.get(Calendar.HOUR),
                 calendarTime.get(Calendar.MINUTE),
-                true
+        true
         );
         dialog.show();
     }

@@ -2,152 +2,211 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingLeft="20dp"
-    android:paddingTop="20dp"
-    android:paddingRight="20dp">
-<TextView
-android:id="@+id/txtBooking"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="@string/title_booking"
-android:textColor="#000000"
-android:textSize="30sp"
-android:textStyle="bold" />
-
-<View
-android:layout_width="match_parent"
-android:layout_height="0.5dp"
-android:layout_marginBottom="20dp"
-android:background="#C2C5CC" />
-
-<EditText
-android:id="@+id/edtFullName"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_marginTop="10dp"
-android:ems="10"
-android:hint="Full name"
-android:inputType="textPersonName"
-android:textColorHighlight="@color/colorPrimary"
-android:textColorLink="#FF00574B"
-android:textSize="14sp" />
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp">
 
-        android:orientation="horizontal">
-
-        <Spinner
-            android:id="@+id/spSex"
+        <TextView
+            android:id="@+id/txtBooking"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_booking"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="20dp"
+            android:background="#C2C5CC" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
 
-        <EditText
-            android:id="@+id/edtDOB"
-            android:hint="Date of birth"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="date"
-            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Waitlist"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
 
-    </LinearLayout>
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/calendar_empty"
+                android:fillViewport="true">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/edtPhone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Phone number"
-            android:inputType="phone"
-            android:textSize="14sp" />
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
 
-        <EditText
-            android:id="@+id/edtMail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Email"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Booking now"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/edtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Full name"
+                android:inputType="textPersonName"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorLink="#FF00574B"
+                android:textSize="14sp" />
 
-    <EditText
-        android:id="@+id/edtAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:ems="10"
-        android:hint="Address"
-        android:inputType="textPersonName"
-        android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
 
-    <Spinner
-        android:id="@+id/spHospital"
-        android:layout_marginTop="10dp"
-        android:hint="Hospital"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
 
-        <EditText
-            android:id="@+id/edtDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Booking date"
-            android:inputType="date"
-            android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/edtDOB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Date of birth"
+                    android:inputType="date"
+                    android:textSize="14sp" />
 
-        <EditText
-            android:id="@+id/edtTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Booking time"
-            android:inputType="time"
-            android:textSize="14sp" />
-    </LinearLayout>
+            </LinearLayout>
 
-    <Button
-        android:id="@+id/btnConsult"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/rounded_button"
-        android:gravity="center|center_vertical"
-        android:onClick="onClick"
-        android:shadowRadius="100"
-        android:text="@string/title_booking"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="14sp" />
+            <EditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Phone number"
+                    android:inputType="phone"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtMail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spHospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Hospital"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/edtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Booking date"
+                    android:inputType="date"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/edtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Booking time"
+                    android:inputType="time"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnConsult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center|center_vertical"
+                android:onClick="onClick"
+                android:shadowRadius="100"
+                android:text="@string/title_booking"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
