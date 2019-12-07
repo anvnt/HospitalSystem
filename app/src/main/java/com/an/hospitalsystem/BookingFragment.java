@@ -64,6 +64,7 @@ public class BookingFragment extends Fragment {
         btnBooking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                
             }
         });
     }
