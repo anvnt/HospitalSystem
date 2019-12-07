@@ -181,7 +181,7 @@
                     android:layout_height="70dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="2"
-                    app:srcCompat="@drawable/c1" />
+                    app:srcCompat="@drawable/c2" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -247,7 +247,7 @@
                     android:layout_height="70dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="2"
-                    app:srcCompat="@drawable/c1" />
+                    app:srcCompat="@drawable/c4" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -313,7 +313,7 @@
                     android:layout_height="70dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="2"
-                    app:srcCompat="@drawable/c1" />
+                    app:srcCompat="@drawable/c3" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -379,7 +379,7 @@
                     android:layout_height="70dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="2"
-                    app:srcCompat="@drawable/c1" />
+                    app:srcCompat="@drawable/c5" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -445,7 +445,7 @@
                     android:layout_height="70dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="2"
-                    app:srcCompat="@drawable/c1" />
+                    app:srcCompat="@drawable/c6" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -506,12 +506,12 @@
                 android:paddingBottom="5dp">
 
                 <ImageView
-                    android:id="@+id/imageView72"
+                    android:id="@+id/imageView7"
                     android:layout_width="300dp"
                     android:layout_height="70dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="2"
-                    app:srcCompat="@drawable/c1" />
+                    app:srcCompat="@drawable/c7" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -577,7 +577,7 @@
                     android:layout_height="70dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="2"
-                    app:srcCompat="@drawable/c1" />
+                    app:srcCompat="@drawable/c8" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -643,7 +643,7 @@
                     android:layout_height="70dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="2"
-                    app:srcCompat="@drawable/c1" />
+                    app:srcCompat="@drawable/c9" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -709,7 +709,7 @@
                     android:layout_height="70dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="2"
-                    app:srcCompat="@drawable/c1" />
+                    app:srcCompat="@drawable/c10" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -775,7 +775,7 @@
                     android:layout_height="70dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="2"
-                    app:srcCompat="@drawable/c1" />
+                    app:srcCompat="@drawable/c11" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
