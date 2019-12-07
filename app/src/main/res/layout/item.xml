@@ -13,7 +13,7 @@
             android:id="@+id/imgNewsImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            app:srcCompat="@drawable/news_drinking_coffee" />
+            app:srcCompat="@drawable/baseline_assignment_ind_black_18dp" />
 
         <TextView
             android:id="@+id/txtNewsTitle"
