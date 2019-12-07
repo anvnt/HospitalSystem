@@ -161,7 +161,7 @@
                         android:textColor="#000000" />
 
                     <TextView
-                        android:id="@+id/txtCard2"
+                        android:id="@+id/txtLogOut"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/smartphone"

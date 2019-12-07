@@ -15,9 +15,15 @@
     android:id="@+id/navigation_booking"
     android:icon="@drawable/baseline_calendar_today_black_18dp"
     android:title="@string/title_booking" />
+    <item
+        android:id="@+id/navigation_pharmacy"
+        android:icon="@drawable/pharmacy"
+        android:title="@string/title_pharmacy" />
 
     <item
         android:id="@+id/navigation_profile"
-        android:icon="@drawable/baseline_assignment_ind_black_18dp"
+        android:icon="@drawable/baseline_assignment_ind_black_182dp"
         android:title="@string/title_profile" />
+
+
 </menu>

@@ -40,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.navigation_booking:
                             selectedFragment = new BookingFragment();
                             break;
+                        case R.id.navigation_pharmacy:
+                            selectedFragment = new PharmacyFragment();
+                            break;
                         case R.id.navigation_profile:
                             selectedFragment = new ProfileFragment();
                             break;

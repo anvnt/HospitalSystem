@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -16,6 +17,7 @@ import android.widget.TimePicker;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -24,12 +26,13 @@ public class BookingFragment extends Fragment {
     View view;
     Spinner spSex;
     ArrayAdapter <String>adapter;
-    EditText edtFullName,  edtPhone, edtEmail, edtAddress ;
+    EditText edtFullName,  edtPhone, edtEmail, edtAddress;
     TextView edtDOB,edtDate,edtTime;
     Calendar calendarDate=Calendar.getInstance();
     SimpleDateFormat sdfDate = new SimpleDateFormat("dd/MM/yyyy");
     Calendar calendarTime=Calendar.getInstance();
     SimpleDateFormat sdfTime=new SimpleDateFormat("HH:mm");
+    Button btnBooking;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -56,6 +59,11 @@ public class BookingFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 moManHInhTimePickerDialog();
+            }
+        });
+        btnBooking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
             }
         });
     }
@@ -130,5 +138,6 @@ public class BookingFragment extends Fragment {
         edtDOB=view.findViewById(R.id.edtDOB);
         edtDate=view.findViewById(R.id.edtDate);
         edtTime=view.findViewById(R.id.edtTime);
+        btnBooking=view.findViewById(R.id.btnBooking);
     }
 }

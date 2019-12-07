@@ -17,7 +17,7 @@
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="384dp"
+        android:layout_marginTop="312dp"
         android:layout_marginEnd="24dp"
         android:background="#99000000"
         android:drawableLeft="@drawable/ic_action_user"
@@ -30,23 +30,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="244dp"
-        android:layout_height="315dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dantweblogo" />
-
     <EditText
         android:id="@+id/password"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:drawableLeft="@drawable/ic_action_pass"
         android:hint="@string/prompt_password"
@@ -60,17 +48,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="244dp"
+        android:layout_height="315dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dantweblogo" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="620dp"
+        android:layout_marginTop="20dp"
         android:text="Register Here."
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintHorizontal_bias="0.747"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/login" />
 
     <ProgressBar
         android:id="@+id/loading"
@@ -91,12 +89,12 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="70dp"
+        android:layout_marginEnd="52dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/login"
-        app:layout_constraintVertical_bias="0.363">
+        app:layout_constraintVertical_bias="0.147">
 
         <ImageView
             android:id="@+id/imageView11"
@@ -118,6 +116,7 @@
         android:id="@+id/login"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:layout_marginTop="-20dp"
         app:cardBackgroundColor="#ff7f50"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
