@@ -18,6 +18,7 @@ import com.an.model.Newspaper;
 public class NewsAdapter  extends ArrayAdapter<Newspaper> {
     Activity context;
     int resource;
+
     public NewsAdapter(@NonNull Activity context, int resource) {
         super(context,resource);
         this.context=context;

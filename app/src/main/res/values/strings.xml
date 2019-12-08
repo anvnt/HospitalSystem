@@ -10,7 +10,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_home">HomeActivity</string>
-    <string name="title_news">News</string>
+    <string name="title_news">Your health</string>
     <string name="title_consultant">Consultant</string>
     <string name="title_booking">Booking</string>
     <string name="title_profile">Profile</string>

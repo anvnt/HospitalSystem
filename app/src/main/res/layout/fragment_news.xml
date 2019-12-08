@@ -16,6 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_slab_bold"
             android:paddingLeft="25dp"
             android:paddingTop="30dp"
             android:paddingRight="20dp"
@@ -51,10 +52,130 @@
             android:layout_marginRight="20dp"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medications"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/progressbar"
+                    android:progress="70"
+                    android:progressDrawable="@drawable/progressbar" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="0.8"
+                    android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Today, 8/12/2019"
+                    android:textAlignment="textEnd" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvDrugReminder"
+                android:layout_width="match_parent"
+                android:layout_height="188dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:fadeScrollbars="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:outlineAmbientShadowColor="#009C4646"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/partly_cloudy" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="189dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="18deg in Texas, USA" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Bring your jacket today" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="vertical"
+>
+
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="13 - 24 deg" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="20dp"
+                android:background="#FFFFFF"
                 android:orientation="vertical">
 
                 <ImageView
@@ -68,6 +189,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:fontFamily="@font/raleway"
                     android:text="Another Benefit from Coffee: It Can Reduce Risk of Metabolic Syndrome "
                     android:textColor="#000"
                     android:textSize="18sp" />
@@ -126,6 +248,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="20dp"
+                android:background="#FFFFFF"
                 android:orientation="vertical">
 
                 <ImageView
@@ -139,6 +262,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:fontFamily="@font/raleway"
                     android:text="New Hope for People with Sickle Cell Anemia as FDA Approves Drug "
                     android:textColor="#000"
                     android:textSize="18sp" />
@@ -186,15 +310,17 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:drawablePadding="30dp"
-                        android:text="04/12/2019"
+                        android:text="07/12/2019"
                         android:textSize="12sp" />
 
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
+                android:background="#FFFFFF"
                 android:orientation="vertical">
 
                 <ImageView
@@ -208,6 +334,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:fontFamily="@font/raleway"
                     android:text="New Treatment Shows Promise in Combating Skin Cancer: How It Works "
                     android:textColor="#000"
                     android:textSize="18sp" />
