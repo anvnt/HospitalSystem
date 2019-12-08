@@ -1,5 +1,6 @@
 package com.an.hospitalsystem;
 
+import android.app.DatePickerDialog;
 import android.app.SearchManager;
 import android.content.Context;
 import android.os.Bundle;
@@ -10,8 +11,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.DatePicker;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -23,6 +26,9 @@ import com.an.adapter.DrugReminderAdapter;
 import com.an.adapter.NewsAdapter;
 import com.an.model.DrugReminder;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class NewsFragment extends Fragment {
     View view;
     ListView lvNews, lvDrugReminder;
@@ -30,6 +36,11 @@ public class NewsFragment extends Fragment {
     private SearchView searchView = null;
     private SearchView.OnQueryTextListener queryTextListener;
     DrugReminderAdapter drugReminderAdapter;
+    Calendar calendarDate=Calendar.getInstance();
+    SimpleDateFormat sdfDate = new SimpleDateFormat("dd/MM/yyyy");
+    TextView txtDate;
+    String today=sdfDate.format(System.currentTimeMillis());
+
 
     @Nullable
     @Override
@@ -52,12 +63,20 @@ public class NewsFragment extends Fragment {
     }
 
     private void addControls() {
+        txtDate=view.findViewById(R.id.txtDate);
+        txtDate.setText("Today, "+today);
         lvDrugReminder=view.findViewById(R.id.lvDrugReminder);
         drugReminderAdapter= new DrugReminderAdapter(getActivity(),R.layout.itemdrug);
         lvDrugReminder.setAdapter(drugReminderAdapter);
     }
 
     private void addEvents() {
+        txtDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moManHinhDatePickerDialog();
+            }
+        });
         lvDrugReminder.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -104,5 +123,34 @@ public class NewsFragment extends Fragment {
 
         super.onCreateOptionsMenu(menu, inflater);
     }
+
+    //date picker
+    private void moManHinhDatePickerDialog() {
+        DatePickerDialog.OnDateSetListener callBack = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                calendarDate.set(Calendar.YEAR,year);
+                calendarDate.set(Calendar.MONTH,month);
+                calendarDate.set(Calendar.DAY_OF_MONTH,dayOfMonth);
+                String currentdate = sdfDate.format(System.currentTimeMillis());
+                String date = sdfDate.format(calendarDate.getTime());
+                if (date.compareTo(currentdate)==0){
+                txtDate.setText("Today, "+date);
+            }
+                else {
+                    txtDate.setText(date);
+
+                }}};
+
+        DatePickerDialog dialog=new DatePickerDialog(
+                view.getContext(),
+                callBack,
+                calendarDate.get(Calendar.YEAR),
+                calendarDate.get(Calendar.MONTH),
+                calendarDate.get(Calendar.DAY_OF_MONTH));
+        dialog.show();
+    };
+
 }
+
 
