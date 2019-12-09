@@ -11,9 +11,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -40,6 +43,10 @@ public class NewsFragment extends Fragment {
     SimpleDateFormat sdfDate = new SimpleDateFormat("dd/MM/yyyy");
     TextView txtDate;
     String today=sdfDate.format(System.currentTimeMillis());
+    Spinner spTime;
+    ArrayAdapter <String>adapter;
+
+
 
 
     @Nullable
@@ -68,8 +75,16 @@ public class NewsFragment extends Fragment {
         lvDrugReminder=view.findViewById(R.id.lvDrugReminder);
         drugReminderAdapter= new DrugReminderAdapter(getActivity(),R.layout.itemdrug);
         lvDrugReminder.setAdapter(drugReminderAdapter);
-    }
+        spTime=view.findViewById(R.id.spTime);
+        adapter=new ArrayAdapter<String>(view.getContext(),android.R.layout.simple_spinner_item);
+        adapter.add("Morning");
+        adapter.add("Noon");
+        adapter.add("Afternoon");
+        adapter.add("Evening");
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spTime.setAdapter(adapter);
 
+    }
     private void addEvents() {
         txtDate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +96,17 @@ public class NewsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 DrugReminder dr = drugReminderAdapter.getItem(position);
-                Toast.makeText(getActivity(),dr.getDrugname(),Toast.LENGTH_LONG).show();
+                //Toast.makeText(getActivity(),dr.getDrugname(),Toast.LENGTH_SHORT).show();
+                //Change like image from blank to fill (successful) and from fill to blank (failed)
+                if (dr.getImglikeblank()==R.drawable.like){
+                    dr.setImglikeblank(R.drawable.likeblank);            }
+                else if (dr.getImglikeblank()==R.drawable.likeblank) {
+                    dr.setImglikeblank(R.drawable.like);
+                }
+                //Change like image
+                dr.setImglikeblank(R.drawable.like);
+                //Notify adapter about changing of model list
+                drugReminderAdapter.notifyDataSetChanged();
             }
         });
     }
