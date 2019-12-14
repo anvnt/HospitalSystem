@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:background="@drawable/coral_bg"
         android:orientation="horizontal">
 
         <TextView
@@ -45,97 +45,117 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundedwhitecomponent"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
 
         <LinearLayout
             android:id="@+id/btnPrescription"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
+            android:background="@drawable/roundedborderwhitecomponent"
             android:gravity="center_horizontal|center_vertical"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
 
             <ImageView
                 android:id="@+id/imageView13"
                 android:layout_width="match_parent"
-                android:layout_height="75dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:paddingBottom="5dp"
                 app:srcCompat="@drawable/myprescription" />
 
             <TextView
-                android:id="@+id/textView35"
+                android:id="@+id/textView135"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:fontFamily="@font/raleway"
+                android:background="#fff"
                 android:gravity="center_horizontal"
                 android:text="Prescription"
-                android:textAllCaps="true"
-                android:textColor="#fff"
-                android:textSize="16sp" />
+                android:textAllCaps="false"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/btnPrediction"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
+            android:background="@drawable/roundedborderwhitecomponent"
             android:gravity="center_horizontal|center_vertical"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
 
             <ImageView
                 android:id="@+id/imageView14"
                 android:layout_width="match_parent"
-                android:layout_height="75dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:paddingBottom="5dp"
                 app:srcCompat="@drawable/test" />
 
             <TextView
-                android:id="@+id/textView36"
+                android:id="@+id/textView136"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#000"
-                android:fontFamily="@font/raleway"
+                android:background="#fff"
                 android:gravity="center_horizontal"
                 android:text="Test"
-                android:textAllCaps="true"
-                android:textColor="@color/colorPrimary"
-                android:textSize="16sp" />
+                android:textAllCaps="false"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/btnBooking"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
+            android:background="@drawable/roundedborderwhitecomponent"
             android:gravity="center_horizontal|center_vertical"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
 
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="match_parent"
-                android:layout_height="75dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:paddingBottom="5dp"
                 app:srcCompat="@drawable/booking" />
 
             <TextView
-                android:id="@+id/textView34"
+                android:id="@+id/textView134"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:fontFamily="@font/raleway"
+                android:background="#fff"
                 android:gravity="center_horizontal"
                 android:text="@string/title_booking"
-                android:textAllCaps="true"
-                android:textColor="#fff"
-                android:textSize="16sp" />
+                android:textAllCaps="false"
+                android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -146,8 +166,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/roundedwhitecomponent"
             android:orientation="vertical"
-            android:paddingTop="20dp">
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -159,7 +186,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/raleway_semibold"
+                    android:fontFamily="@font/raleway"
                     android:gravity="center_horizontal"
                     android:text="DIABETES"
                     android:textColor="#000"
@@ -170,8 +197,7 @@
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
+                android:fontFamily="@font/raleway"
                 android:text="Diabetes is linked to having blood glucose that remains too high after eating carbohydrates (sugar) you eat. This occurs when the insulin released in the blood is insufficient or ineffective. It is insulin that moves glucose inside the body’s cells. In this case, the cells are deprived of nutrients and the glucose that stays too high in the blood becomes toxic."
                 android:textAlignment="viewStart" />
 
@@ -185,14 +211,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
                 android:textAlignment="center">
 
                 <TextView
                     android:id="@+id/textView26"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
                     android:paddingBottom="10dp"
                     android:text="You may have diabetes if you experience the following symptoms: "
                     android:textColor="#000"
@@ -202,12 +227,14 @@
                     android:id="@+id/textView29"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
                     android:text="textView" />
 
                 <TextView
                     android:id="@+id/textView32"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
                     android:paddingTop="20dp"
                     android:paddingBottom="10dp"
                     android:text="High levels of glucose in your blood, called hyperglycaemia, may be due to several factors: "
@@ -218,6 +245,7 @@
                     android:id="@+id/textView33"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
                     android:text="TextView" />
 
             </LinearLayout>

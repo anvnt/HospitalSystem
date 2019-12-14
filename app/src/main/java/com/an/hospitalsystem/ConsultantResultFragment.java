@@ -51,6 +51,24 @@ public class ConsultantResultFragment extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+        btnPrediction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fragmentTransaction = getActivity()
+                        .getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, new PaymentFragment());
+                fragmentTransaction.commit();
+            }
+        });
+        btnPrescription.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fragmentTransaction = getActivity()
+                        .getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, new PrescriptionFragment());
+                fragmentTransaction.commit();
+            }
+        });
     }
 
 }

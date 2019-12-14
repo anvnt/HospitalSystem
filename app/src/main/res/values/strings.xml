@@ -10,11 +10,12 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_home">HomeActivity</string>
-    <string name="title_news">YourHealth</string>
-    <string name="title_consultant">Consultation</string>
+    <string name="title_news">Daily</string>
+    <string name="title_consultant">Consultancy</string>
     <string name="title_booking">Booking</string>
     <string name="title_profile">Profile</string>
     <string name="title_pharmacy">Pharmacy</string>
+    <string name="payment">Payment</string>
 
     <string-array name="arrSymptoms">
         <item>Abdominal pain</item>

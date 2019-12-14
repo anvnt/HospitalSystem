@@ -63,7 +63,6 @@ public class NewsFragment extends Fragment {
 
     private void fakedata() {
         drugReminderAdapter.add(new DrugReminder(R.drawable.pacman3,"Paracetamol",R.drawable.likeblank));
-
         drugReminderAdapter.add(new DrugReminder(R.drawable.pacman1,"Oxymetazolin",R.drawable.likeblank));
         drugReminderAdapter.add(new DrugReminder(R.drawable.pacman2,"Codein",R.drawable.likeblank));
 
@@ -75,14 +74,14 @@ public class NewsFragment extends Fragment {
         lvDrugReminder=view.findViewById(R.id.lvDrugReminder);
         drugReminderAdapter= new DrugReminderAdapter(getActivity(),R.layout.itemdrug);
         lvDrugReminder.setAdapter(drugReminderAdapter);
-        spTime=view.findViewById(R.id.spTime);
+      /*  spTime=view.findViewById(R.id.spTime);
         adapter=new ArrayAdapter<String>(view.getContext(),android.R.layout.simple_spinner_item);
         adapter.add("Morning");
         adapter.add("Noon");
         adapter.add("Afternoon");
         adapter.add("Evening");
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spTime.setAdapter(adapter);
+        spTime.setAdapter(adapter);*/
 
     }
     private void addEvents() {
@@ -160,10 +159,10 @@ public class NewsFragment extends Fragment {
                 String currentdate = sdfDate.format(System.currentTimeMillis());
                 String date = sdfDate.format(calendarDate.getTime());
                 if (date.compareTo(currentdate)==0){
-                txtDate.setText("Today, "+date);
+                txtDate.setText("Today morning, "+date);
             }
                 else {
-                    txtDate.setText(date);
+                    txtDate.setText("Morning, " + date);
 
                 }}};
 
