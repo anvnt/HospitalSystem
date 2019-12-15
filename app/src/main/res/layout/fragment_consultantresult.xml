@@ -1,130 +1,256 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtBooking2"
+            android:layout_width="wrap_content"
             android:layout_height="80dp"
-            android:background="@drawable/coral_bg"
-            android:orientation="horizontal">
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="30dp"
+            android:paddingRight="20dp"
+            android:text="@string/title_consultant"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/txtBooking2"
-                android:layout_width="wrap_content"
-                android:layout_height="80dp"
-                android:layout_marginBottom="20dp"
-                android:paddingLeft="25dp"
-                android:paddingTop="30dp"
-                android:paddingRight="20dp"
-                android:text="@string/title_consultant"
-                android:textColor="#000000"
-                android:textSize="30sp"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="25dp"
-                app:srcCompat="@drawable/logo" />
-        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundedwhitecomponent"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
 
         <LinearLayout
+            android:id="@+id/btnPrescription"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundedborderwhitecomponent"
+            android:gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
-            android:paddingLeft="20dp"
-            android:paddingTop="20dp"
-            android:paddingRight="20dp">
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                app:srcCompat="@drawable/myprescription" />
 
             <TextView
-                android:id="@+id/txtConsultantResult"
-                android:layout_width="match_parent"
-                android:layout_height="500dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:text="Kết quả tư vấn ở đây "
-                app:layout_constraintBottom_toTopOf="@+id/txtQuestion"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/txtQuestion"
+                android:id="@+id/textView135"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hỏi gì đó"
-                android:textAlignment="center"
-                app:layout_constraintBottom_toTopOf="@+id/linearhori"
-                app:layout_constraintTop_toBottomOf="@id/txtConsultantResult" />
-
-            <LinearLayout
-                android:id="@+id/linearhori"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtConsultantResult"
-                tools:layout_editor_absoluteX="16dp">
-
-                <Button
-                    android:id="@+id/btnPrescription"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/rounded_button"
-                    android:text="Prescription"
-                    android:textColor="#FFFFFF"
-                    android:textSize="10sp"
-                    android:visibility="visible" />
-
-                <Button
-                    android:id="@+id/btnPrediction"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/rounded_button"
-                    android:text="Tests prediction"
-                    android:textColor="#FFFFFF"
-                    android:textSize="10sp"
-                    android:visibility="visible" />
-
-                <Button
-                    android:id="@+id/btnBooking"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/rounded_button"
-                    android:text="Booking "
-                    android:textColor="#FFFFFF"
-                    android:textSize="10sp"
-                    android:visibility="visible" />
-            </LinearLayout>
+                android:background="#fff"
+                android:gravity="center_horizontal"
+                android:text="Prescription"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/btnPrediction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundedborderwhitecomponent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                app:srcCompat="@drawable/test" />
+
+            <TextView
+                android:id="@+id/textView136"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center_horizontal"
+                android:text="Test"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnBooking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundedborderwhitecomponent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                app:srcCompat="@drawable/booking" />
+
+            <TextView
+                android:id="@+id/textView134"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center_horizontal"
+                android:text="@string/title_booking"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+        </LinearLayout>
     </LinearLayout>
-</ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/roundedwhitecomponent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/raleway"
+                    android:gravity="center_horizontal"
+                    android:text="DIABETES"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway"
+                android:text="Diabetes is linked to having blood glucose that remains too high after eating carbohydrates (sugar) you eat. This occurs when the insulin released in the blood is insufficient or ineffective. It is insulin that moves glucose inside the body’s cells. In this case, the cells are deprived of nutrients and the glucose that stays too high in the blood becomes toxic."
+                android:textAlignment="viewStart" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                app:srcCompat="@drawable/consultantresult" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:textAlignment="center">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
+                    android:paddingBottom="10dp"
+                    android:text="You may have diabetes if you experience the following symptoms: "
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
+                    android:text="textView" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="High levels of glucose in your blood, called hyperglycaemia, may be due to several factors: "
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

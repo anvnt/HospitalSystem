@@ -3,24 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@drawable/coral_bg"
+        android:layout_height="70dp"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/txtBooking2"
             android:layout_width="wrap_content"
             android:layout_height="80dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="5dp"
             android:paddingLeft="25dp"
             android:paddingTop="30dp"
             android:paddingRight="20dp"
             android:text="@string/title_news"
-            android:textColor="#000000"
+            android:textColor="#fff"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -36,6 +36,7 @@
             android:layout_height="60dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="25dp"
+            android:visibility="invisible"
             app:srcCompat="@drawable/logo" />
     </LinearLayout>
 
@@ -46,28 +47,175 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="20dp"
-                android:orientation="vertical">
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundedwhitecomponent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundedwhitecomponent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/roundedwhitecomponent"
+                        android:text="Medications"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundedwhitecomponent"
+                        android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Morning, 8/12/2019"
+                        android:textAlignment="textEnd" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/progressbar"
+                    android:progress="70"
+                    android:progressDrawable="@drawable/progressbar" />
+
+                <ListView
+                    android:id="@+id/lvDrugReminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="132dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/roundedwhitecomponent"
+                    android:fadeScrollbars="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundedcomponent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:outlineAmbientShadowColor="#009C4646"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/partly_cloudy" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="189dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="18deg in Texas, USA"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Bring your jacket today"
+                            android:textColor="#000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="13 - 24 deg"
+                            android:textColor="#000" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundedwhitecomponent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
 
                 <ImageView
                     android:id="@+id/imgNewsImage"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:background="@drawable/news_drinking_coffee" />
+                    android:background="@drawable/news_drinking_coffee"
+                    android:paddingTop="5dp" />
 
                 <TextView
                     android:id="@+id/txtNewsTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:fontFamily="@font/raleway"
                     android:text="Another Benefit from Coffee: It Can Reduce Risk of Metabolic Syndrome "
                     android:textColor="#000"
                     android:textSize="18sp" />
@@ -78,6 +226,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/raleway"
                     android:text="Experts say a type of nutrient known as polyphenols may be the ingredient in coffee... "
                     android:textSize="14sp" />
 
@@ -99,6 +248,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.1"
+                        android:fontFamily="@font/raleway"
                         android:text="Healthline"
                         android:textSize="12sp" />
 
@@ -115,6 +265,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:drawablePadding="30dp"
+                        android:fontFamily="@font/raleway"
                         android:text="23 hours ago"
                         android:textSize="12sp" />
 
@@ -125,8 +276,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="20dp"
-                android:orientation="vertical">
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundedwhitecomponent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
 
                 <ImageView
                     android:id="@+id/imgNewsImage2"
@@ -139,6 +295,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:fontFamily="@font/raleway"
                     android:text="New Hope for People with Sickle Cell Anemia as FDA Approves Drug "
                     android:textColor="#000"
                     android:textSize="18sp" />
@@ -149,6 +306,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/raleway"
                     android:text="The new drug Oxbryta attacks the underlying causes of sickle cell anemia, not just... "
                     android:textSize="14sp" />
 
@@ -170,6 +328,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.1"
+                        android:fontFamily="@font/raleway"
                         android:text="Healthline"
                         android:textSize="12sp" />
 
@@ -186,16 +345,23 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:drawablePadding="30dp"
-                        android:text="04/12/2019"
+                        android:fontFamily="@font/raleway"
+                        android:text="07/12/2019"
                         android:textSize="12sp" />
 
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:orientation="vertical">
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundedwhitecomponent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
 
                 <ImageView
                     android:id="@+id/imgNewsImage1"
@@ -208,6 +374,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:fontFamily="@font/raleway"
                     android:text="New Treatment Shows Promise in Combating Skin Cancer: How It Works "
                     android:textColor="#000"
                     android:textSize="18sp" />
@@ -218,6 +385,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/raleway"
                     android:text="Researchers said a radiation treatment known as brachytherapy might be a better option... "
                     android:textSize="14sp" />
 
@@ -239,6 +407,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.1"
+                        android:fontFamily="@font/raleway"
                         android:text="Healthline"
                         android:textSize="12sp" />
 
@@ -255,6 +424,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:drawablePadding="30dp"
+                        android:fontFamily="@font/raleway"
                         android:text="05/12/2019"
                         android:textSize="12sp" />
 

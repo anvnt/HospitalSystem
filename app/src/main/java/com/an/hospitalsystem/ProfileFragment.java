@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -58,5 +59,36 @@ public class ProfileFragment extends Fragment {
         txtAnamnesis=view.findViewById(R.id.txtAnamnesis);
         txtDrugAllergy=view.findViewById(R.id.txtDrugAllergy);
         txtLogOut= view.findViewById(R.id.txtLogOut);
+    }
+
+    public static class ConsultantFragment extends Fragment {
+        View view;
+        Button btnConsult;
+        @Nullable
+        @Override
+        public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+            view = inflater.inflate(R.layout.fragment_consultant, container, false);
+            addControls();
+            addEvents();
+            return view;
+        }
+
+        private void addEvents() {
+            btnConsult.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    FragmentTransaction fragmentTransaction = getActivity()
+                            .getSupportFragmentManager().beginTransaction();
+                    fragmentTransaction.replace(R.id.fragment_container, new ConsultantResultFragment());
+                    fragmentTransaction.commit();
+                }
+            });
+        }
+
+        public void addControls() {
+            btnConsult=view.findViewById(R.id.btnConsult);
+        }
+
+
     }
 }

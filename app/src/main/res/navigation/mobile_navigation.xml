@@ -25,6 +25,6 @@
         android:id="@+id/navigation_profile"
         android:name="com.an.hospitalsystem.ProfileFragment"
         android:label="@string/title_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profiles" />
 
 </navigation>
